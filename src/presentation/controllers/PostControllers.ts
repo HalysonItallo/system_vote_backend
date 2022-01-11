@@ -13,7 +13,6 @@ export class PostController {
         const query = new CreatePostCommand(repoService);
 
         const { idUser, author, text } = req.body;
-
         const post = await query.execute({
             idUser,
             author,
